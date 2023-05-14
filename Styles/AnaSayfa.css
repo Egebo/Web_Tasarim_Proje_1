@@ -28,7 +28,20 @@ html {
 
 body {
   background-color: var(--main-color);
-  height: 200vh;
+}
+
+section {
+  padding: 3.5rem 7%;
+}
+
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 2rem 3rem;
+  border-radius: 30rem;
+  font-size: 1.8rem;
+  color: #ccc;
+  background-color: var(--black-color );
 }
 
 /* Header start*/
@@ -57,12 +70,38 @@ body {
   border-bottom: 0.1rem solid transparent;
 }
 
-.header .navbar .active,  
+.header .navbar .active,
 .header .navbar a:hover {
-border-color:  var(--main-color) ;
-padding-bottom: 0.5rem;
+  border-color: var(--main-color);
+  padding-bottom: 0.5rem;
+}
+/* Header end*/
+
+/* Home Start*/
+.home {
+  min-height: 100vh;
+  background: url(../saat\ kulesi\ main.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-top: -14.5rem;
+  display: flex;
+  align-items: center;
 }
 
+.home .content {
+  min-width: 60rem;
+}
 
+.home .content h3 {
+  font-size: 6rem;
+  color: #fff;
+}
 
-/* Header end*/
+.home .content p {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.8;
+  padding: 1rem 0;
+  color: #09ff00;
+}
+/* Home end*/
