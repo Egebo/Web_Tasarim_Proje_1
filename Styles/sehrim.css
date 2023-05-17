@@ -107,9 +107,8 @@ section {
 
 .home .content {
   min-width: 60rem;
-  background: #232323;
+  background: transparent;
   padding: 40px;
-  margin: auto;
   margin-top: 10%;
   border-radius: 50px;
 }

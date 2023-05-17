@@ -13,8 +13,8 @@ if (isset($_POST['kayit'])) {
     if (!$username) {
         echo "Lütfen Kullanıcı Adınızı Girin";
     } elseif (!$password || !$password_again) {
-        echo "Lütfen Şifre Girin";
-    } elseif (!$password != !$password_again) {
+        echo "Lütfen Şifrenizi Girin";
+    } elseif ($password != $password_again) {
         echo "Girdiğiniz Şifreler Aynı Değil";
     } else {
         //veritabanı kayıt işlemi
@@ -24,9 +24,9 @@ if (isset($_POST['kayit'])) {
         ]);
         if ($ekle) {
             echo "Kayıt Başarılı, Yönlendiriliyorsunuz...";
-            header('Reflesh:2; index.php');
+            header('Refresh:2; url=index.php');
         } else {
-            echo "Bir hata oluştu Lütfen tekrar Kontrol edin";
+            echo "Bir hata oluştu. Lütfen tekrar deneyin.";
         }
     }
 }
@@ -48,10 +48,10 @@ if (isset($_POST['giris'])) {
          $say=$kullanici_sor->rowCount();
         if($say==1){
             $_SESSION["username"]=$username;
-            echo "başarılı giriş yönlendiriliyorsunuz"; 
-            header("Location: ../AnaSayfa.html");
+            echo "Giriş Başarılı: Siteye yönlendiriliyorsunuz..."; 
+            header("Refresh:2; url=../AnaSayfa.html");
         }else{
-            echo "bir hata oluştu tekrar kontrol edin";
+            echo "Giriş bilgilerinde bir yanlışlık var. Lütfen Tekrar Deneyiniz";
         }
     }
 }

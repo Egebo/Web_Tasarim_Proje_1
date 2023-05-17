@@ -16,7 +16,7 @@ body {
   width: 300px;
 }
 .login-screen {
-  background-color: #fff;
+  background-color: #ffffff;
   padding: 20px;
   border-radius: 5px;
 }
@@ -32,7 +32,7 @@ body {
 }
 input{
     text-align: center;
-    background-color: #ECF0F1;
+    background-color: #c8c8c8;
     border: 2px solid transparent;
     border-radius: 3px;
     font-size: 16px;
