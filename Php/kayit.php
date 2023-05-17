@@ -34,7 +34,7 @@ require 'baglan.php';
                 <button href="kayit.php" name="kayit" class="btn btn-primary btn-large btn-block">Kayıt Ol</button>
             </div>
             </form>
-           <a href="../Php/index.php"><button class="btn btn-primary btn-large btn-block">Giriş Yap</button></a> 
+           <a href="index.php"><button class="btn btn-primary btn-large btn-block">Giriş Yap</button></a> 
         </div>
     </div>
 
