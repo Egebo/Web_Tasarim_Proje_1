@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Giriş Yap</title>
-    <link rel="stylesheet" type="text/css" href="Styles/style.css">
+    <link rel="stylesheet" type="text/css" href="../Styles/style.css">
 </head>
 <body>
     <div class="login">
