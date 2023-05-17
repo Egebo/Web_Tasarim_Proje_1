@@ -1,0 +1,4 @@
+[ [redirects]]
+from= "/*"
+to "/Php/index.php"
+status 200
