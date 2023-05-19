@@ -12,6 +12,10 @@
             </div>
             <form action="islem.php" method="post">
             <div class="login-form">
+            <div class="control-group">
+                    <input type="text" name="mail" class="login-field" placeholder="Kullanıcı Maili" id="login-mail">
+                    <label class="login-field-icon fui user" for="login-mail"></label>
+                </div>
                 <div class="control-group">
                     <input type="text" name="username" class="login-field" placeholder="Kullanıcı Adı" id="login-name">
                     <label class="login-field-icon fui user" for="login-name"></label>
