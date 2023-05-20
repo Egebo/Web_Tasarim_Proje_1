@@ -36,11 +36,10 @@ html::-webkit-scrollbar-thumb {
   background-color: var(--black-color);
 }
 
-html::-webkit-scrollbar-track{
+html::-webkit-scrollbar-track {
   width: 8px;
   background-color: transparent;
 }
-
 
 body {
   background-color: var(--main-color);
@@ -49,7 +48,6 @@ body {
 section {
   padding: 3.5rem 7%;
 }
-
 
 .btn {
   margin-top: 1rem;
@@ -92,6 +90,18 @@ section {
   border-color: var(--main-color);
   padding-bottom: 0.5rem;
 }
+
+.header .buttons button {
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 20px;
+  background-color: transparent;
+}
+
+#menu-btn{
+display: none;
+}
+
 /* Header end*/
 
 /* Home Start*/
@@ -107,7 +117,7 @@ section {
 
 .home .content {
   min-width: 60rem;
-  background: #232323;
+  background: #232323cc;
   padding: 40px;
   margin: auto;
   margin-top: 10%;
@@ -127,7 +137,7 @@ section {
   padding: 1rem 0;
   color: #ffffff;
 }
-.home .content img{
+.home .content img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
@@ -135,32 +145,89 @@ section {
   cursor: pointer;
 }
 
-
-.home .content img:hover{
-transform: scale(0.9);
+.home .content img:hover {
+  transform: scale(0.9);
 }
 
-.home .content ul{
+.home .content ul {
   margin: 0;
   padding: 0;
 }
 
-.home .content li{
+.home .content li {
   display: inline-block;
   margin: 6px;
   list-style: none;
 }
 
-.home .content li a{
+.home .content li a {
   color: white;
   font-size: 60px;
   transition: all ease-in-out 250ms;
 }
 
-.home .content li a:hover{
-  color: #b9b9b9 ;
+.home .content li a:hover {
+  color: #b9b9b9;
 }
 
-
-
 /* Home end*/
+
+/* Responsive Start*/
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 1.5rem 2rem;
+  }
+
+  .header .logo img {
+    height: 7rem;
+  }
+
+section{
+  padding: 2rem;
+}
+}
+
+@media (max-width: 768px) {
+
+.header #menu-btn{
+  display: inline-block;
+}
+
+.header .navbar{
+position: absolute;
+top: 95%;
+background-color: #fff;
+height: calc(100vh - 9rem);
+width: 30rem;
+box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+right: -100%;
+}
+
+.header .navbar.active{
+right: 3rem;
+}
+
+.header .navbar a{
+color: var(--black-color);
+display: block;
+margin: 1.5rem;
+padding: 0.5rem;
+font-size: 2rem;
+}
+}
+
+@media (max-width: 576px) {
+html{
+  font-size: 50%;
+}
+
+.header #menu-btn{
+display: inline-block;
+}
+}
+
+/* Responsive End*/
