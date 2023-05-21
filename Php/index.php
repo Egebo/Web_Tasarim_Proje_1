@@ -30,6 +30,5 @@
             <a href="kayit.php"><button class="btn btn-primary btn-large btn-block">Kayıt Ol</button></a>
         </div>
     </div>
-
 </body>
 </html>

@@ -13,7 +13,7 @@ body {
 }
 .login {
   margin: 20px auto;
-  width: 500px;
+  width: 300px;
 }
 .login-screen {
   background-color: #ffffff;
@@ -38,7 +38,7 @@ input{
     font-size: 16px;
     font-weight: 200;
     padding: 10px 0;
-    width: 400px;
+    width: 250px;
     transition: border .5s;
 }
 input:focus{
@@ -57,7 +57,7 @@ input:focus{
     border-radius: 3px;
     transition: 0.25s;
     display: block;
-    width: 300px;
+    width: 200px;
     margin: 0 auto;
     margin-top: 5px;
 }
