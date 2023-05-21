@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=,, initial-scale=1.0" />
     <title>Egemen Bozca Web Tasarımı Proje 1</title>
-    <link rel="stylesheet" href="Styles/AnaSayfa.css" class="css" />
+    <link rel="stylesheet" href="Styles/iletişim.css" class="css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -22,10 +22,8 @@
         <a href="özgeçmiş.html">Özgeçmiş</a>
         <a href="sehrim.html">Şehrim</a>
         <a href="mirasımız.html">Mirasımız</a>
-        <a href="hobiler.html">Hobiler</a>
-        <a href="etkinlikler.html">Etkinlikler</a>
-        <a href="#" class="active">İlgi Alanlarım</a>
-        <a href="../WebProjee/Php/index.php">Çıkış Yap</a>
+        <a href="#" class="active">İletişim</a>
+        <a href="Php/index.php">Çıkış Yap</a>
       </nav>
       <div class="buttons">
         <button id="menu-btn">
@@ -38,10 +36,24 @@
     <!-- Hakkımda Start -->
     <section class="home">
       <div class="content">
-        <h3>Egemen Bozca B221210037</h3>
-        <p>
-          APİ GELCEK
-        </p>
+        <div class="form">
+          <form action="Php/gonder.php" method="POST">
+            <h2>İletişim Formu</h2>
+            <label for="isimsoyisim"> İsim Soyisim: </label> <br>
+            <input type="text" id="isimsoyisim" name="isim-soyisim"><br>
+
+            <label for="mail"> E-Posta: </label> <br>
+            <input type="text" id="mail" name="mail"><br>
+
+            <label for="konu"> Konu: </label> <br>
+            <input type="text" id="konu" name="konu"><br>
+
+            <label for="mesaj">Mesaj:</label><br>
+            <textarea name="mesaj" id="mesaj"></textarea><br>
+
+            <button type="submit" class="btn" align="center" >Gönder</button>
+          </form>
+        </div>
       </div>
     </section>
     <script src="js/script.js"></script>

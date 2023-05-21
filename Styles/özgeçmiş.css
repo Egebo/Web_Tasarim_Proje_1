@@ -49,16 +49,6 @@ section {
   padding: 3.5rem 7%;
 }
 
-.btn {
-  margin-top: 1rem;
-  display: inline-block;
-  padding: 2rem 3rem;
-  border-radius: 30rem;
-  font-size: 1.8rem;
-  color: #ccc;
-  background-color: var(--black-color);
-}
-
 /* Header start*/
 .header .logo img {
   height: 10rem;
@@ -98,76 +88,251 @@ section {
   background-color: transparent;
 }
 
-#menu-btn{
-display: none;
+#menu-btn {
+  display: none;
 }
 
 /* Header end*/
 
 /* Home Start*/
 .home {
-  min-height: 100vh;
+  min-height: 1000px;
   background: url(../saat\ kulesi\ main.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   margin-top: -14.5rem;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
-.home .content {
-  min-width: 60rem;
-  background: #232323cc;
-  padding: 40px;
-  margin: auto;
-  margin-top: 10%;
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  min-height: 1000px;
+  background: #d0d0d0aa;
   border-radius: 50px;
+  display: grid;
+  margin-top: 100px;
+  grid-template-columns: 1fr 2fr;
+  box-shadow: 0 35px 35px rgba(0, 0, 0, 0.1);
 }
 
-.home .content h3 {
-  font-size: 6rem;
-  font-weight: 300;
-  color: #fff;
+.container .left-side {
+  position: relative;
+  background-color: #b33f01;
+  padding: 40px;
 }
 
-.home .content p {
-  font-size: 18px;
-  font-weight: 300;
-  line-height: 1.8;
-  padding: 1rem 0;
-  color: #ffffff;
+.profile-text {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
-.home .content img {
+
+.profile-text .imgBx {
+  position: relative;
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  transition: 0.5s;
+  overflow: hidden;
+}
+
+.profile-text .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.profile-text h2 {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 20px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 600;
+  line-height: 1.4em;
+}
+
+.contactInfo h3 {
+    font-size: 16px;
+}
+.contactInfo.education h3 {
+    font-size: 16px;
+}
+
+
+.contactInfo {
+  padding-top: 40px;
+}
+
+.title {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+.contactInfo ul {
+  position: relative;
+}
+
+.contactInfo ul li {
+  position: relative;
+  list-style: none;
+  margin: 10px 0;
   cursor: pointer;
 }
 
-.home .content img:hover {
-  transform: scale(0.9);
-}
-
-.home .content ul {
-  margin: 0;
-  padding: 0;
-}
-
-.home .content li {
+.contactInfo ul li .icon {
   display: inline-block;
-  margin: 6px;
+  width: 30px;
+  font-size: 18px;
+  color: #ff7300;
+}
+
+.contactInfo ul li span {
+  color: #fff;
+  font-weight: 300;
+}
+
+.contactInfo.education li {
+  margin-bottom: 15px;
+}
+
+.contactInfo.education h5 {
+  font-size: 16px;
+  color: #ff7300;
+  font-weight: 500;
+}
+
+.contactInfo.education h4:nth-child(2) {
+  color: #fff;
+  font-weight: 500;
+}
+
+.contactInfo.education h4 {
+  font-size: 12px;
+  color: #fff;
+  font-weight: 300;
+}
+
+.contactInfo.language .percent {
+position: relative;
+width: 100%;
+height: 6px;
+background: #081921;
+display: block;
+margin-top: 5px;
+}
+
+.contactInfo.language .percent div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #ff7300;
+}
+
+
+
+.container .right-side {
+  position: relative;
+  background-color: #fff;
+  padding: 40px;
+}
+
+.about{
+  margin-bottom: 50px;
+
+}
+
+.about:last-child{
+  margin-bottom: 0;
+}
+
+.title2{
+  color: #ff7300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+p{
+color: #333;
+font-size: 12px;
+text-align: justify;
+}
+
+.about .box{
+  display: flex;
+  flex-direction: row;
+  margin: 20px 0;
+}
+
+.about .box h3{
+  min-width: 150px;
+  text-transform:capitalize;
+  color: #848c90;
+  font-weight: 600;
+}
+
+.about .box li{
+text-transform: capitalize;
+color: #b33f01;
+font-size: 10px;
+}
+
+.skills .box{
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .box h4{
+  text-transform: capitalize;
+  color: #848c90;
+  font-weight: 500;
+
+}
+.skills .box .percent{
+  position: relative;
+  width: 100%;
+  height: 10px;
+  background: #000;
+}
+.skills .box .percent div{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: #ff7300;
+}
+
+.interests ul{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+.interests ul li{
   list-style: none;
+  color: #000;
+  font-weight: 500;
+  margin: 10px 0;
 }
 
-.home .content li a {
-  color: white;
-  font-size: 60px;
-  transition: all ease-in-out 250ms;
-}
-
-.home .content li a:hover {
-  color: #b9b9b9;
+.interests ul li .fa-solid{
+  color: #ff7300;
+  font-size: 18px;
 }
 
 /* Home end*/
@@ -186,48 +351,47 @@ display: none;
     height: 7rem;
   }
 
-section{
-  padding: 2rem;
-}
+  section {
+    padding: 2rem;
+  }
 }
 
 @media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
 
-.header #menu-btn{
-  display: inline-block;
-}
+  .header .navbar {
+    position: absolute;
+    top: 95%;
+    background-color: #fff;
+    height: calc(100vh - 9rem);
+    width: 30rem;
+    box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
+    right: -100%;
+  }
 
-.header .navbar{
-position: absolute;
-top: 95%;
-background-color: #fff;
-height: calc(100vh - 9rem);
-width: 30rem;
-box-shadow: 0px 20px 14px 0px rgb(0 0 0 / 75%);
-right: -100%;
-}
+  .header .navbar.active {
+    right: 3rem;
+  }
 
-.header .navbar.active{
-right: 3rem;
-}
-
-.header .navbar a{
-color: var(--black-color);
-display: block;
-margin: 1.5rem;
-padding: 0.5rem;
-font-size: 2rem;
-}
+  .header .navbar a {
+    color: var(--black-color);
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 576px) {
-html{
-  font-size: 50%;
-}
+  html {
+    font-size: 50%;
+  }
 
-.header #menu-btn{
-display: inline-block;
-}
+  .header #menu-btn {
+    display: inline-block;
+  }
 }
 
 /* Responsive End*/
